@@ -1,0 +1,367 @@
+* {
+	font-family: "Nunito", sans-serif;
+}
+:root {
+	--primary-color: rgb(47, 75, 233);
+	--secondary-color: rgb(0, 25, 129);
+    --blue-color:rgb(0, 172, 244);
+    --orange-color:rgb(253,128,38);
+    --green-color:rgb(0,211,78);
+    --red-color:rgb(241,32,46);
+    --purple-color:rgb(178,20,214);
+    --pink-color:rgb(255,30,144);
+}
+
+.primary-color {
+	color: var(--primary-color);
+}
+
+.secondary-color {
+	color: var(--secondary-color);
+}
+
+.croped {
+	margin: -50px -50px -50px -50px;
+}
+
+.nav-item,
+.nav-item button {
+	font-weight: bold;
+}
+
+.nav-link.active,
+.nav-link:hover {
+	color: var(--primary-color) !important;
+}
+
+#scroll-top {
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	border-radius: 50%;
+	z-index:99;
+	border:none;
+	outline:none;
+	font-size: 1.5rem;
+	width:2.5rem;
+	height:2.5rem;
+	line-height: 2rem;
+	background-color: var(--primary-color);
+	color:white;
+	transition: all 0.2s ease-in-out;
+}
+
+#scroll-top:hover {
+	background-color: var(--secondary-color);
+}
+
+#scroll-top:active {
+	transform: scale(0.9) translateY(-10px);
+}
+
+.btn-primary {
+	background-color: var(--primary-color);
+}
+
+#home button {
+	box-shadow: 0px 5px 30px rgb(65 84 241 / 40%);
+	padding: 15px 40px;
+}
+
+#home {
+	position: relative;
+	background-image: url("img/hero-bg.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#about .content {
+	padding: 40px;
+	background-color: rgb(244, 248, 255);
+}
+
+#about .content h3 {
+	color: var(--primary-color);
+}
+
+#about .content button {
+	box-shadow: 0px 5px 30px rgb(65 84 241 / 30%);
+	padding: 15px 40px;
+}
+
+.section-header p:nth-child(1) {
+	color: var(--primary-color);
+	font-weight: 700;
+}
+
+.section-header p:nth-child(2) {
+	color: rgb(0, 37, 98);
+}
+
+#value .value-details {
+	padding: 10px;
+	box-shadow: 0px 0 5px rgb(1 41 112 / 8%);
+}
+
+#value .value-details img {
+	width: 80%;
+}
+
+#count .count-details {
+	padding: 30px;
+	box-shadow: 0px 0 30px rgb(1 41 112 / 8%);
+}
+
+#count .count-details i {
+	font-size: 42px;
+}
+
+#count .count-details p:nth-child(1) {
+	font-size: 36px;
+	margin-bottom: 0;
+}
+
+#count .count-details p:nth-child(2) {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+#features .checkbox {
+	padding: 24px 20px;
+	box-shadow: 0px 0 30px rgb(1 41 112 / 8%);
+	transition: all 0.2s;
+}
+
+#features .checkbox:hover {
+	transform: scale(1.03);
+}
+
+#features .checkboxes i {
+	color: var(--primary-color);
+}
+
+#services .service-card {
+    transition: all 0.2s ease-in-out;
+}
+
+#services .service-icon {
+	font-size: 3rem;
+}
+#services .read-more{
+    text-decoration: none;
+	font-weight: bold;
+}
+
+#services .service-card:hover .service-icon,
+.service-card:hover .read-more,
+.service-card:hover h3,
+.service-card:hover p {
+	color: white;
+}
+
+#services .blue {
+	border-bottom: 3px solid var(--blue-color);
+}
+
+#services .blue .service-icon,
+.blue .read-more {
+	color: var(--blue-color);
+}
+
+#services .blue:hover {
+	background-color: var(--blue-color);
+}
+
+#services .orange {
+	border-bottom: 3px solid var(--orange-color);
+}
+
+#services .orange .service-icon,
+.orange .read-more {
+	color: var(--orange-color);
+}
+
+#services .orange:hover {
+	background-color: var(--orange-color);
+}
+
+#services .green {
+	border-bottom: 3px solid var(--green-color);
+}
+
+#services .green .service-icon,
+.green .read-more {
+	color: var(--green-color);
+}
+
+#services .green:hover {
+	background-color: var(--green-color);
+}
+
+#services .red {
+	border-bottom: 3px solid var(--red-color);
+}
+
+#services .red .service-icon,
+.red .read-more {
+	color: var(--red-color);
+}
+
+#services .red:hover {
+	background-color: var(--red-color);
+}
+
+#services .purple {
+	border-bottom: 3px solid var(--purple-color);
+}
+
+#services .purple .service-icon,
+.purple .read-more {
+	color: var(--purple-color);
+}
+
+#services .purple:hover {
+	background-color: var(--purple-color);
+}
+
+#services .pink {
+	border-bottom: 3px solid var(--pink-color);
+}
+
+#services .pink .service-icon,
+.pink .read-more {
+	color: var(--pink-color);
+}
+
+#services .pink:hover {
+	background-color: var(--pink-color);
+}
+
+#pricing .pricing-img {
+    width:200px;
+}
+
+#pricing .card {
+    box-shadow: 0px 0 30px rgb(1 41 112 / 8%);
+}
+
+#pricing .card:hover {
+    transform: scale(1.03);
+    transition:all 0.3s ease-in-out;
+}
+
+#portfolio .gallery-img {
+    position:relative
+}
+
+#portfolio .overlay {
+    position:absolute;
+    left:0;
+    top:0;
+    width:0%;
+    height:100%;
+    background-color: rgba(255,255,255,0.5);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.2s ease-in;
+    overflow: hidden;
+}
+
+#portfolio .gallery-img:hover .overlay {
+    width:100%;
+} 
+
+#testimonial .carousel {
+    max-width:1000px;
+    margin:auto
+}
+
+#team .team-details {
+    box-shadow: 0px 0 30px rgb(1 41 112 / 8%);
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+#team .team-details:hover {
+    transform: scale(1.05);
+}
+
+#team .social-media-list {
+    position:absolute;
+    right:-25px;
+    top:20px;
+    font-size: 1.5rem;
+    color:white;
+    text-decoration: none;
+    transition:right 0.2s ease-in-out;
+}
+
+
+#team .team-details:hover .social-media-list {
+    right:15px;
+}
+
+
+#client .slider {
+	height:200px;
+	margin:auto;
+	overflow: hidden;
+	position: relative;
+	width:auto;
+}
+
+@keyframes scroll {
+	0% {
+		transform:translateX(0);
+	}
+	100% {
+		transform:translateX(calc(-320px * 4.5))
+	}
+}
+
+#client .slider .slider-track {
+	animation: scroll 30s linear reverse infinite;
+	display: flex;
+	justify-content: space-around;
+	width: calc(320px * 9);
+}
+
+#client .slider .slide img{
+	height:200px;
+	width:300px;
+}
+
+#contact .contact-detail {
+	background-color: rgb(249,250,255);
+}
+
+#footer .container{
+	background-image:url("img/footer-bg.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom 0px right 0px;
+
+}
+#footer .footer-link{
+	list-style-type: none;
+}
+
+#footer .copyright {
+	background-color:  rgb(249,250,255);
+}
+
+section {
+	padding-top:80px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
